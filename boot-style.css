@@ -1,0 +1,371 @@
+.navbar-icon {
+    height: 30px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+    margin-left: 10px;
+}
+.navbar-brand{
+    margin-left: 20px;
+  
+}
+
+/* Navbar ki height badhayi */
+.navbar {
+    height: 80px !important;
+    display: flex;
+    align-items: center;
+}
+
+/* Logo ka size bada kiya */
+.navbar-icon {
+    height: 60px; /* Logo ka height */
+    width: auto;
+}
+
+/* "Organic" text ka font size aur alignment */
+.navbar-brand {
+    font-size: 28px !important; /* Text bada kiya */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+/* "All Categories" ke saath space badhaya */
+.navbar-nav .nav-item:first-child {
+    margin-left: 30px; /* Organic aur All Categories ke beech ka gap badhaya */
+}
+
+/* "PAGES" dropdown ka text color black aur bold */
+.nav-item.dropdown a.nav-link {
+    color: rgb(0, 0, 0) !important;
+    font-weight: bold; /* Bold text */
+}
+
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #333; /* Hover background color */
+    color: white; /* Text color white */
+}
+
+/* Search input ka width */
+.custom-search-input {
+    width: 300px !important;
+}
+
+/* Search aur Home ke beech space */
+.extra-space {
+    margin-left: 50px;
+}
+
+/* Header ke end me icons */
+.nav-icons {
+    display: flex;
+    align-items: center;
+    margin-left: 30px; /* Home aur Icons ke beech ka gap */
+}
+
+.nav-icons a {
+    font-size: 22px;
+    color: black;
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+
+.nav-icons a:hover {
+    color: #28a745; /* Green hover color */
+}
+/* Banner Styling */
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image Full Width */
+.banner-container img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+/* Main Text on Image */
+.banner-text {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 58px;
+    font-weight: bold;
+    text-align: center;
+    /* background: rgba(0, 0, 0, 0.5); */
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+/* 3 Boxes on Image */
+.info-boxes {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Common Box Styling */
+.info-box {
+    width: 33.33%;  /* 3 boxes evenly adjust honge */
+    height: 150px;  /* Height bada di */
+    text-align: center;
+    padding: 20px;
+    border-radius: 0;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Different Colors for Each Box */
+.box1 { background: #FF5733; }  /* Red */
+.box2 { background: #4CAF50; }  /* Green */
+.box3 { background: #3498db; }  /* Blue */
+
+/* Icon Styling */
+.info-box i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .info-boxes {
+        flex-direction: column;
+    }
+    .info-box {
+        width: 100%;
+        height: 120px;
+    }
+}
+/* Buttons Container - Added Margin */
+.banner-buttons {
+    margin-top: 20px;
+}
+
+/* Common Button Styling - Added padding, border, and transition */
+.banner-buttons .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+/* Start Shopping Button - Added Background & Hover Effect */
+.shop-btn {
+    background: #28a745;
+    color: white;
+    border: 2px solid #28a745;
+}
+
+.shop-btn:hover {
+    background: white;
+    color: #28a745;
+}
+
+/* Join Now Button - Added Background & Hover Effect */
+.join-btn {
+    background: #ff5733;
+    color: white;
+    border: 2px solid #ff5733;
+    margin-left: 15px;
+}
+
+.join-btn:hover {
+    background: white;
+    color: #ff5733;
+}
+/* Text ko Left ya Right Shift Karne ke liye */
+.banner-text {
+    position: absolute;
+    top: 30%;
+    left: 10%;  /* Text ko left side shift kiya */
+    transform: translateY(-50%);
+    text-align: left; /* Text left align */
+}
+
+/* Agar Right Side Shift Karna Hai */
+.banner-text.right {
+    left: auto;
+    right: 10%; /* Text ko right side shift kiya */
+    text-align: right; /* Text right align */
+}
+/* Category Section */
+.category-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #c7c7c570;
+}
+
+.category-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Category Container */
+.category-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px; /* Thoda zyada gap diya */
+    padding: 0 10%;
+}
+
+/* Each Category Item */
+.category-item {
+    width: 120px; /* Increased width */
+    text-align: center;
+}
+
+/* Circular Images - Increased Size */
+.category-item img {
+    width: 120px;  /* Increased width */
+    height: 120px; /* Increased height */
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.category-item img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Category Text */
+.category-item p {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 868px) {
+    .category-container {
+        padding: 0 5%;
+        gap: 20px;
+    }
+
+    .category-item {
+        width: 100px; /* Mobile-friendly size */
+    }
+
+    .category-item img {
+        width: 100px;
+        height: 100px;
+    }
+}
+/* Product Card Styling */
+.product-card {
+    width: 18rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+}
+
+/* Card Hover Effect */
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Image */
+.product-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Card Body */
+.product-card .card-body {
+    padding: 15px;
+}
+
+/* Product Title */
+.product-card .card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Product Price */
+.product-card .card-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745;
+    margin: 10px 0;
+}
+
+/* Weight Styling */
+.product-card .weight {
+    font-size: 14px;
+    color: #777;
+    margin-left: 5px;
+}
+
+/* Button Container */
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* Common Button Styling */
+.card-buttons .btn {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+    background: #ffbb33;
+    color: white;
+    border: 2px solid #ffbb33;
+    margin-right: 5px;
+}
+
+.add-to-cart-btn:hover {
+    background: white;
+    color: #ffbb33;
+}
+
+/* Buy Now Button */
+.buy-now-btn {
+    background: #dc3545;
+    color: white;
+    border: 2px solid #dc3545;
+    margin-left: 5px;
+}
+
+.buy-now-btn:hover {
+    background: white;
+    color: #dc3545;
+}
+
